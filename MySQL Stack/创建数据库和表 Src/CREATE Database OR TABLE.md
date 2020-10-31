@@ -86,4 +86,3 @@ CREATE TABLE `campaign_cost_report` (
   PRIMARY KEY (`ymd`,`website`,`Campaign`,`ExternalCampaignId`,`Device`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
-
