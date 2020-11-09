@@ -14,7 +14,7 @@
 ### <font color=#FF7F00>Yarn模式</font>
 Spark客户端直接连接`Yarn`,不需要额外构建Spark集群，有`yarn-client`和`yarn-cluster`两种模式，主要区别在于`Driver`程序运行节点不同。`master`参数设置为`yarn`,`deploy-mode`参数为`client`或者`cluster`。
 1. `yarn-client`的`Driver`程序运行在客户端，适用于交互、调试。
-2. `yarn-cluster`的`Driver`程序运行在由`ResourceManager`启动的`ApplicationMaster`中，适用于生产环境。
+2. `yarn-cluster`的`Driver`程序运行在由进程`ResourceManager`启动的`ApplicationMaster`中，适用于生产环境。
 
 ### <font color=#FF7F00>Mesos模式</font>
 Spark客户端直接连接`Mesos`，不需要额外构建Spark集群。
