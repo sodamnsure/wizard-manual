@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark常用transformations算子</font></center>
+## <center><font color=#5C4033>Spark常用action算子</font></center>
 
 ### <font color=#FF7F00>reduce</font>
 > reduce将RDD中元素两两传递给输入函数，同时产生一个新值，新值与RDD中下一个元素再被传递给输入函数，直到最后只有一个值为止。
