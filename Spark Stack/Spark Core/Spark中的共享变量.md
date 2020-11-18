@@ -36,3 +36,7 @@ rdd.foreach(num => sumAccumulator += num)
 
 println(sumAccumulator.value)
 ```
+
+### <font color=#FF7F00>参考链接</font>
+[Spark中共享变量](https://blog.csdn.net/lp284558195/article/details/81456652)
+
