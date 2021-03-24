@@ -1,6 +1,6 @@
-## <center><font color=#5C4033>Spark提交作业参数</font></center>
+## Spark提交作业参数
 
-### <font color=#FF7F00>常用参数归纳如下</font>
+### 常用参数归纳如下
 ```
 --driver-memory: driver内存大小
 
