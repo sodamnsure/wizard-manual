@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark算子reduceByKey与groupByKey的区别</font></center>
+## Spark算子reduceByKey与groupByKey的区别
 
 ### <font color=#FF7F00>reduceByKey</font>
 reduceByKey:按照ket进行聚合，在shuffle之前有combine(预聚合)操作，返回结果是RDD[k,v]。

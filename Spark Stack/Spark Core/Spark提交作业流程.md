@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark提交作业流程</font></center>
+## Spark提交作业流程
 
 ### <font color=#FF7F00>YarnClient</font>
 ```

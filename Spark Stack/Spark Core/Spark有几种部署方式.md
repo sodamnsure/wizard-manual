@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark部署方式以及区别</font></center>
+## Spark部署方式以及区别
 
 ### <font color=#FF7F00>Local模式</font>
 运行在一台机器上，常用于本地测试开发，可以通过设置master参数值设置计算的线程数目。

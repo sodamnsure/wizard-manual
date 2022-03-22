@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark算子repartition与coalesce的关系和区别</font></center>
+## Spark算子repartition与coalesce的关系和区别
 
 ### <font color=#FF7F00>关系</font>
 两者都是用来改变RDD的partition数量，repartition底层调用的就是coalesce方法：coalesce(numPartition, shuffle = true)

@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark血统概念理解</font></center>
+## Spark血统概念理解
 
 ### <font color=#FF7F00>Lineage简介</font>
 RDD Lineage被称为RDD运算图或RDD依赖关系图，是RDD的逻辑执行计划，当某个RDD的部分分区数据丢失时，可以通过Lineager找到丢失的父RDD的分区进行局部计算来恢复丢失的数据，节省资源提高运行效率。

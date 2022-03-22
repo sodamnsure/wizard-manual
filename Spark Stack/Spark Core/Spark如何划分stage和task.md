@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark如何划分stage和task</font></center>
+## Spark如何划分stage和task
 
 ### <font color=#FF7F00>Stage</font>
 

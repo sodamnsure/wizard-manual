@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark宽窄依赖</font></center>
+## Spark宽窄依赖
 
 ### <font color=#FF7F00>窄依赖</font>
 `Narrow Dependencies`是指父RDD的每一个分区最多被一个子RDD分区所用，表现为一个父RDD的分区对应于一个子RDD的分区或者多个父RDD的分区对应一个子RDD的分区，也就是说一个父RDD的分区不可能对应一个子RDD的多个分区。

@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark常用shuffle算子</font></center>
+## Spark常用shuffle算子
 
 ### [三大分类](http://spark.apache.org/docs/latest/rdd-programming-guide.html#shuffle-operations)
 1. Repartition operations like `repartition` and `coalesce`。

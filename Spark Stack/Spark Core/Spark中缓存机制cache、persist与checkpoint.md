@@ -1,4 +1,4 @@
-## <center><font color=#5C4033>Spark中缓存机制cache、persist与checkpoint</font></center>
+## Spark中缓存机制cache、persist与checkpoint
 
 ### <font color=#FF7F00>关系</font>
 都是做RDD持久化的
