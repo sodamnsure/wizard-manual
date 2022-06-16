@@ -1,0 +1,3 @@
+由于Hadoop深受客户欢迎，许多公司都推出了各自版本的Hadoop，也有一些公司则围绕Hadoop开发产品。在Hadoop生态系统中，规模最大、知名度最高的公司则是Cloudera。
+
+Hadoop安装、部署、管理的难度非常大，这使用很多用户对Hadoop望而却步，好在这种情况不久就得到了改善，Cloudera提供了非常简单的Hadoop的发布版本，能够十分方便地对Hadoop进行安装、部署和管理，这导致目前大约有75%的Hadoop新用户使用Cloudera。
