@@ -1,3 +1,0 @@
-OGG for Bigdata是Oracle官方的将数据库数据实时流式传输到大数据系统的工具，对于Oracle19c及以下的版本均可以支持，目前OGG for Bigdata可以将数据写入Kafka。
-
-本文讲述如何配置ogg以实现Oracle数据库增量数据实时同步到Kafka中，消息格式为json。
