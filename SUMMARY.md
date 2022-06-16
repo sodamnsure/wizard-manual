@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Description](README.md)
-* Prometheus
+* [Prometheus](prometheus/readme.md)
   * [安装](prometheus/install.md)
 
-* Grafana
+* [Grafana]
   * [安装](grafana/install.md)
