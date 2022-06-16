@@ -1,2 +1,1 @@
-# technology
-常见技术栈
+Reference Manual
