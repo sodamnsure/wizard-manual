@@ -150,7 +150,7 @@
    Description=pushgateway
    Documentation=https://prometheus.io/
    After=network.target
-   
+   	
    [Service]
    Type=simple
    User=prometheus
@@ -159,7 +159,7 @@
    
    [Install]
    WantedBy=multi-user.target
-
+   ```
 
 
 3. 启动服务
