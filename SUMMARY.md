@@ -6,4 +6,3 @@
 * [Grafana](grafana/readme.md)
   * [安装](grafana/install.md)
 * [Cloudera](cloudera/readme.md)
-* [book.json](book.json.md)
