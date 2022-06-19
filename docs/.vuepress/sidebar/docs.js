@@ -20,7 +20,16 @@ module.exports = [
         directoryPath: "prometheus/",
         initialOpenGroupIndex: -1,
         children: [
-            "install"
+            "install",
+            {
+                title: "Test",
+                directoryPath: "test/",
+                initialOpenGroupIndex: -1,
+                children: [
+                  "install",
+                ],
+                sidebarDepth: 2,
+              },
         ],
     },
 ];
