@@ -1,3 +1,13 @@
+body {
+    font-family: -apple-system;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+}
+
 main.page > .theme-default-content{
     max-width: 80%;
     padding-top: 50px;
@@ -49,4 +59,39 @@ main.page > .theme-default-content span.badge{
 
 h1, h2, h3, h4, h5, h6 {
     border-bottom: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 1px;
+    width: 100%;
+    overflow: auto;
+    break-inside: auto;
+    text-align: left;
+    display: table;
+}
+
+
+table thead {
+    background-color: #f6f8fa;
+}
+
+table th {
+    border: 0.1em solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+
+table tr {
+    border-top: 0.1em solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+
+table td {
+    border: 0.1em solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
 }

@@ -4,7 +4,15 @@ module.exports = [
         directoryPath: "cloudera/",
         initialOpenGroupIndex: -1,
         children: [
-            "desc",
+            {
+                title: "Requirements",
+                directoryPath: "requirements/",
+                initialOpenGroupIndex: -1,
+                children: [
+                    "operating-system-requirements",
+                ],
+                sidebarDepth: 2,
+            },
         ],
     },
     {

@@ -19,7 +19,7 @@ module.exports = {
     nav: [
       {
         text: "Reference Manual",
-        link: "/reference-manual/prometheus/install",
+        link: "/reference-manual/cloudera/requirements/operating-system-requirements",
       },
       {
         text: "Analytics Engine",
@@ -32,5 +32,8 @@ module.exports = {
         "/reference-manual/"
       ),
     },
+  },
+  markdown: {
+    lineNumbers: true
   }
 }
