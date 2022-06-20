@@ -10,6 +10,17 @@ module.exports = [
                 initialOpenGroupIndex: -1,
                 children: [
                     "operating-system-requirements",
+                    "database-requirements",
+                ],
+                sidebarDepth: 2,
+            },
+            {
+                title: "Installation",
+                directoryPath: "installation/",
+                initialOpenGroupIndex: -1,
+                children: [
+                    "before-you-install",
+                    "installing-cloudera-manager-and-cdh",
                 ],
                 sidebarDepth: 2,
             },
