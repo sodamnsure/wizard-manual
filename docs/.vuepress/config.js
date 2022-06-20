@@ -21,10 +21,14 @@ module.exports = {
         text: "Reference Manual",
         link: "/reference-manual/prometheus/install",
       },
+      {
+        text: "Analytics Engine",
+        link: "/analytics-engine/desc",
+      },
     ],
     sidebar: {
       "/reference-manual/": convertSidebar(
-        require("./sidebar/docs.js"),
+        require("./sidebar/reference-manual.js"),
         "/reference-manual/"
       ),
     },

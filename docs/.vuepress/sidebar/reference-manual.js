@@ -21,15 +21,6 @@ module.exports = [
         initialOpenGroupIndex: -1,
         children: [
             "install",
-            {
-                title: "Test",
-                directoryPath: "test/",
-                initialOpenGroupIndex: -1,
-                children: [
-                  "install",
-                ],
-                sidebarDepth: 2,
-              },
         ],
     },
 ];
