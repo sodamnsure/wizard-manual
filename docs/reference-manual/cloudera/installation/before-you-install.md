@@ -98,3 +98,49 @@
 在兼容RHEL 7的操作系统的系统上，已经开始默认使用chronyd服务，而不是ntpd服务了。Cloudera优先使用chronyd验证时间是否同步，且由于服务器可以联网，所以这一步骤不在配置。
 
 注：配置路径为`/etc/chrony.conf`，启动命令`systemctl start chronyd`。
+
+
+
+## 五、本地安装
+
+1. 配置Local Parcel Repository
+
+   1. 安装`Apache HTTP`服务
+
+      ```sh
+      sudo yum install httpd
+      ```
+
+   2. 编辑`/etc/httpd/conf/httpd.conf`文件，在`<IfModule mime_module>`模块添加文件支持
+
+      ```sh{8}
+      <IfModule mime_module>
+          # 省略上方
+          #
+          # If the AddEncoding directives above are commented-out, then you
+          # probably should define those extensions to indicate media types:
+          #
+          AddType application/x-compress .Z
+          AddType application/x-gzip .gz .tgz .parcel
+      
+          # 省略下方
+      </IfModule>
+      ```
+
+   3. 启动`Apache HTTP`服务
+
+      ```sh
+      sudo systemctl start httpd
+      ```
+
+   4. 下载Parcel到Repository
+
+      ```sh
+      sudo mkdir -p /var/www/html/cloudera-repos
+      sudo wget --recursive --no-parent --no-host-directories https://USERNAME:PASSWORD@archive.cloudera.com/p/cdh6/6.3.2/parcels/ -P /var/www/html/cloudera-repos
+      sudo wget --recursive --no-parent --no-host-directories https://USERNAME:PASSWORD@archive.cloudera.com/gplextras6/6.3.2/parcels/ -P /var/www/html/cloudera-repos
+      sudo chmod -R ugo+rX /var/www/html/cloudera-repos/cdh6
+      sudo chmod -R ugo+rX /var/www/html/cloudera-repos/gplextras6
+      ```
+
+   5. 在页面安装页面，选择`Remote Parcel Repository URLs`输入仓库地址:`http://<web_server>/cloudera-parcels/cdh6/6.3.3/`
