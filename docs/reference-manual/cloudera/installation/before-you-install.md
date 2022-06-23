@@ -5,22 +5,22 @@
 1. 设置主机名
 
    ```sh
-   sudo hostnamectl set-hostname foo-1.example.com
+   sudo hostnamectl set-hostname monalisa001.wizard.com
    ```
 
 2. 编辑`/etc/hosts`文件
 
    ```sh
-   1.1.1.1  foo-1.example.com  foo-1
-   2.2.2.2  foo-2.example.com  foo-2
-   3.3.3.3  foo-3.example.com  foo-3
-   4.4.4.4  foo-4.example.com  foo-4
+   192.168.7.1  monalisa001.wizard.com  monalisa001
+   192.168.7.2  monalisa002.wizard.com  monalisa002
+   192.168.7.3  monalisa003.wizard.com  monalisa003
+   192.168.7.4  monalisa004.wizard.com  monalisa004
    ```
 
 3. 编辑`/etc/sysconfig/network`
 
    ```sh
-   HOSTNAME=foo-1.example.com
+   HOSTNAME=monalisa001.wizard.com
    ```
 
 4. 验证主机标识一致性
@@ -31,21 +31,8 @@
 
       ```sh
       eth0      Link encap:Ethernet  HWaddr 00:0C:29:A4:E8:97  
-                inet addr:172.29.82.176  Bcast:172.29.87.255  Mask:255.255.248.0
+                inet addr:192.168.7.1  Bcast:172.29.87.255  Mask:255.255.248.0
       ...
-      ```
-
-      
-
-   3. 运行`host -v -t A $(hostname)`命令，验证输出是否与`hostname`命令的输出结果匹配。并且IP地址应该与`ifconfig`命令输出的`inet addr`值相同。
-
-      ```sh
-      Trying "foo-1.example.com"
-      ...
-      ;; ANSWER SECTION:
-      foo-1.example.com. 60 IN
-      A
-      172.29.82.176
       ```
 
       
