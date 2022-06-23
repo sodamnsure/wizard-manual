@@ -72,19 +72,16 @@
    setenforce 0
    ```
 
-4. 在安装CDH完成后，需要重新启动SELinux，通过重新修改`SELINUX=permissive`为`SELINUX=enforcing`。并且运行下面命令立即启用SELinux。
-
-   ```sh
-   setenforce 1
-   ```
-
    
 
 ## 四、启用NTP服务
 
-在兼容RHEL 7的操作系统的系统上，已经开始默认使用chronyd服务，而不是ntpd服务了。Cloudera优先使用chronyd验证时间是否同步，且由于服务器可以联网，所以这一步骤不在配置。
+在兼容RHEL 7的操作系统的系统上，已经开始默认使用chronyd服务，而不是ntpd服务了。Cloudera优先使用chronyd验证时间是否同步，且由于服务器可以联网，所以这一步骤不在配置集群内网的之间的时间同步。
 
-注：配置路径为`/etc/chrony.conf`，启动命令`systemctl start chronyd`。
+注：配置路径为`/etc/chrony.conf`
+
+1. 启动命令`systemctl start chronyd`。
+2. 设置开机启动 `systemctl enable chronyd`。
 
 
 
