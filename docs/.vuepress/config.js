@@ -35,8 +35,6 @@ module.exports = {
         require("./sidebar/reference-manual.js"),
         "/reference-manual/"
       ),
-    },
-    sidebar: {
       "/data-integration/": convertSidebar(
         require("./sidebar/data-integration.js"),
         "/data-integration/"
