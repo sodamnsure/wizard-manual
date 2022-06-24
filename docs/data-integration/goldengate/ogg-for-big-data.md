@@ -1,14 +1,12 @@
 # Oracle GoldenGate for Big Data
 
-[OGG for Bigdata](https://docs.oracle.com/en/middleware/goldengate/big-data/index.html)是Oracle官方的将数据库数据实时流式传输到大数据系统的工具。
+[Oracle GoldenGate for Big Data](https://docs.oracle.com/en/middleware/goldengate/big-data/index.html)是Oracle官方的将数据库数据实时流式传输到大数据系统的工具。
 
 ## 一、环境要求
 
-* 目标端版本和源端OGG保持一致，或者高于源端OGG版本，推荐使用最新版本。
+* 目标端版本和源端Oracle GoldenGate保持一致，或者高于源端OGG版本，推荐使用最新版本。
 * [目标端官网下载地址](https://edelivery.oracle.com/osdc/faces/SoftwareDelivery)，搜索`Oracle GoldenGate for Big Data`下载对应版本(本文使用的是**12.3.2.1.0**版本)即可。
-* OGG for Big Data运行需要依赖Java环境，且JDK版本大于等于1.8。
-
-
+* Oracle GoldenGate for Big Data运行需要依赖Java环境，且JDK版本大于等于1.8。
 
 ## 二、安装步骤
 
