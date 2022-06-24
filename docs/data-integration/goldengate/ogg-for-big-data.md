@@ -85,5 +85,3 @@
    ```
 
    然后运行`info all`查看`MANAGER`的Status是否`RUNNING`即可。
-
-   

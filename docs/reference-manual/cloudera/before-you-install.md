@@ -1,4 +1,4 @@
-# 安装准备
+# Before You Install
 
 ## 一、设置主机名
 

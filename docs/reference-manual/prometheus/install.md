@@ -1,4 +1,4 @@
-# Prometheus安装与配置
+# Install And Config
 
 ## 一. 所需组件以及版本
 

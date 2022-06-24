@@ -1,4 +1,4 @@
-# 操作系统要求
+# Operating System Requirements
 
 ## 一、软件依赖
 

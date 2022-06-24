@@ -4,26 +4,9 @@ module.exports = [
         directoryPath: "cloudera/",
         initialOpenGroupIndex: -1,
         children: [
-            {
-                title: "Requirements",
-                directoryPath: "requirements/",
-                initialOpenGroupIndex: -1,
-                children: [
-                    "operating-system-requirements",
-                    "database-requirements",
-                ],
-                sidebarDepth: 2,
-            },
-            {
-                title: "Installation",
-                directoryPath: "installation/",
-                initialOpenGroupIndex: -1,
-                children: [
-                    "before-you-install",
-                    "installing-cloudera-manager-and-cdh",
-                ],
-                sidebarDepth: 2,
-            },
+            "operating-system-requirements",
+            "before-you-install",
+            "installing-cloudera-manager-and-cdh",
         ],
     },
     {

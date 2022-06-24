@@ -19,7 +19,7 @@ module.exports = {
     nav: [
       {
         text: "Reference Manual",
-        link: "/reference-manual/cloudera/requirements/operating-system-requirements",
+        link: "/reference-manual/cloudera/operating-system-requirements",
       },
       {
         text: "Data Integration",
@@ -42,6 +42,7 @@ module.exports = {
     },
   },
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    extractHeaders: ['h1'],
   }
 }
