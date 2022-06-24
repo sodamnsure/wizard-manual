@@ -13,13 +13,17 @@ function convertSidebar(list, path) {
 }
 
 module.exports = {
-  title: 'Analytics Engine',
+  title: 'Manual',
   description: 'Just playing around',
   themeConfig: {
     nav: [
       {
         text: "Reference Manual",
         link: "/reference-manual/cloudera/requirements/operating-system-requirements",
+      },
+      {
+        text: "Data Integration",
+        link: "/data-integration/goldengate/ogg-for-big-data",
       },
       {
         text: "Analytics Engine",
@@ -30,6 +34,12 @@ module.exports = {
       "/reference-manual/": convertSidebar(
         require("./sidebar/reference-manual.js"),
         "/reference-manual/"
+      ),
+    },
+    sidebar: {
+      "/data-integration/": convertSidebar(
+        require("./sidebar/data-integration.js"),
+        "/data-integration/"
       ),
     },
   },
