@@ -1,24 +1,22 @@
-# Install And Config
+# Install and Config
 
 ## 一. 所需组件以及版本
 
-官网：https://prometheus.io/
+1. [官网](https://prometheus.io/)
 
-下载地址：https://prometheus.io/download/
+   [下载地址](https://prometheus.io/download/)
 
-详细组件以及版本：
+2. 详细组件以及版本：
 
-[prometheus-2.34.0.linux-amd64.tar.gz](https://github.com/prometheus/prometheus/releases/download/v2.34.0/prometheus-2.34.0.linux-amd64.tar.gz)
+   [prometheus-2.34.0.linux-amd64.tar.gz](https://github.com/prometheus/prometheus/releases/download/v2.34.0/prometheus-2.34.0.linux-amd64.tar.gz)
 
-[alertmanager-0.24.0.linux-amd64.tar.gz](https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz)
+   [alertmanager-0.24.0.linux-amd64.tar.gz](https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz)
 
-[node_exporter-1.3.1.linux-amd64.tar.gz](https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz)
+   [node_exporter-1.3.1.linux-amd64.tar.gz](https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz)
 
-[pushgateway-1.4.2.linux-amd64.tar.gz](https://github.com/prometheus/pushgateway/releases/download/v1.4.2/pushgateway-1.4.2.linux-amd64.tar.gz)
+   [pushgateway-1.4.2.linux-amd64.tar.gz](https://github.com/prometheus/pushgateway/releases/download/v1.4.2/pushgateway-1.4.2.linux-amd64.tar.gz)
 
-
-
-注：报警选择alertmanager，对比grafana的报警机制更加灵活
+   注：报警选择alertmanager，对比grafana的报警机制更加灵活
 
 
 
