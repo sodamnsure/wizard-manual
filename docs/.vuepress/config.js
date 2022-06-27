@@ -19,7 +19,7 @@ module.exports = {
     nav: [
       {
         text: "Reference Manual",
-        link: "/reference-manual/cloudera/operating-system-requirements",
+        link: "/reference-manual/cloudera/system-requirements",
       },
       {
         text: "Data Integration",
