@@ -12,7 +12,7 @@
 
    2. 编辑`/etc/httpd/conf/httpd.conf`文件，在`<IfModule mime_module>`模块添加文件支持
 
-      ```sh{8}
+      ```sh{10}
       <IfModule mime_module>
           # 省略上方
           #
