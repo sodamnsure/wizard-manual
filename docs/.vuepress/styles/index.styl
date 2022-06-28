@@ -1,5 +1,5 @@
 body {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.42857143;
     -webkit-font-feature-settings: "liga" on, "calt" on;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -7,12 +7,12 @@ body {
     letter-spacing: 0;
 }
 
-h1 { font-size: 1.7rem; }
-h2 { font-size: 1.5rem; color: #135ce0}
-h3 { font-size: 1.3rem; color: #135ce0}
-h4 { font-size: 1.2rem; color: #135ce0}
-h5 { font-size: 1.1rem; color: #135ce0}
-h6 { font-size: 1rem; color: #135ce0}
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.3rem; color: #135ce0}
+h3 { font-size: 1.1rem; color: #135ce0}
+h4 { font-size: 1rem; color: #135ce0}
+h5 { font-size: 0.9rem; color: #135ce0}
+h6 { font-size: 0.9rem; color: #135ce0}
 
 main.page > .theme-default-content{
     font-family: Arial;
@@ -20,7 +20,6 @@ main.page > .theme-default-content{
     padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    transform: translate(-5rem, 0);
 }
 main.page > .page-nav{
     max-width: 80%;
@@ -108,11 +107,11 @@ table td {
 
 // 调整代码块UI
 div[class*="language-"].line-numbers-mode::after {
-    width: 2.5rem;
+    width: 2rem;
 }
 
 div[class*="language-"].line-numbers-mode .line-numbers-wrapper {
-    width: 2.5rem;
+    width: 2rem;
     padding: 0.75rem 0;
 }
 
@@ -121,7 +120,7 @@ div[class*="language-"].line-numbers-mode .line-numbers-wrapper {
 }
 
 div[class*="language-"].line-numbers-mode pre {
-    padding-left: 3.75rem;
+    padding-left: 2.75rem;
 }
 
 
@@ -131,4 +130,9 @@ div[class*="language-"]::before {
 
 div[class*="language-"] .highlight-lines {
     padding-top: 0.8rem;
+}
+
+
+p, ul, ol {
+    line-height: 0.85;
 }
