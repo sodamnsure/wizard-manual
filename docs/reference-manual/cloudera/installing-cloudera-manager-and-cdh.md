@@ -39,7 +39,7 @@
       tar -zxvf cm6.3.1-redhat7.tar.gz
       tree -C -L 5
       ```
-      
+   
       ```sh
       .
       ├── CDH-6.3.2-1.cdh6.3.2.p0.1605554-el7.parcel
@@ -72,7 +72,7 @@
       ├── cm6.3.1-redhat7.tar.gz
       └── manifest.json
       ```
-      
+   
       
 
    5. 配置Parcel到Repository
