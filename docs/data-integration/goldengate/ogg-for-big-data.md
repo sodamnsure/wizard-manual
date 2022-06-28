@@ -4,9 +4,10 @@
 
 ## 一、环境要求
 
-* 目标端版本和源端Oracle GoldenGate保持一致，或者高于源端OGG版本，推荐使用最新版本。
-* [目标端官网下载地址](https://edelivery.oracle.com/osdc/faces/SoftwareDelivery)，搜索`Oracle GoldenGate for Big Data`下载对应版本(本文使用的是**12.3.2.1.0**版本)即可。
-* Oracle GoldenGate for Big Data运行需要依赖Java环境，且JDK版本大于等于1.8。
+1. 目标端版本和源端Oracle GoldenGate保持一致，或者高于源端OGG版本，推荐使用最新版本。
+
+2. [目标端官网下载地址](https://edelivery.oracle.com/osdc/faces/SoftwareDelivery)，搜索`Oracle GoldenGate for Big Data`下载对应版本(本文使用的是**12.3.2.1.0**版本)即可。
+3. Oracle GoldenGate for Big Data运行需要依赖Java环境，且JDK版本大于等于1.8。
 
 ## 二、安装步骤
 
