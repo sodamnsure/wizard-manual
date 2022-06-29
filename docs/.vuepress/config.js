@@ -29,6 +29,10 @@ module.exports = {
         text: "Analytics Engine",
         link: "/analytics-engine/desc",
       },
+      {
+        text: "Data Warehouse",
+        link: "/data-warehouse/dimensional-modeling/overview-of-dimension-modeling",
+      },
     ],
     sidebar: {
       "/reference-manual/": convertSidebar(
@@ -38,6 +42,10 @@ module.exports = {
       "/data-integration/": convertSidebar(
         require("./sidebar/data-integration.js"),
         "/data-integration/"
+      ),
+      "/data-warehouse/": convertSidebar(
+        require("./sidebar/data-warehouse.js"),
+        "/data-warehouse/"
       ),
     },
   },
