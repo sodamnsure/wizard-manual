@@ -59,14 +59,20 @@
    mysql80-community-source                     MySQL 8.0 Community Se 禁用
    ```
 
-2. 使用`yum-config-manager`命令启用mysql5.7
+2. 安装`yum-utils`包，使得可以使用`yum-config-manager`命令管理资源库
+
+   ```sh
+   sudo yum -y install yum-utils
+   ```
+
+3. 使用`yum-config-manager`命令启用mysql5.7
 
    ```sh
    sudo yum-config-manager --disable mysql80-community
    sudo yum-config-manager --enable mysql57-community
    ```
 
-3. 查看启用结果
+4. 查看启用结果
 
    ```sh
    yum repolist enabled | grep mysql
@@ -123,6 +129,8 @@
    ```
 
    
+
+## 4. 修改简单密码
 
 
 
