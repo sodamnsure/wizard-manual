@@ -1,6 +1,6 @@
 # Oracle GoldenGate for Big Data
 
-[Oracle GoldenGate for Big Data](https://docs.oracle.com/en/middleware/goldengate/big-data/index.html)是Oracle官方的将数据库数据实时流式传输到大数据系统的工具。
+[**Oracle GoldenGate for Big Data**](https://docs.oracle.com/en/middleware/goldengate/big-data/index.html)是Oracle官方的将数据库数据实时流式传输到大数据系统的工具。
 
 ## 一、环境要求
 
