@@ -302,7 +302,7 @@
 
 5. 新增配置`prometheus.yml`
 
-   ```yml
+   ```yaml
      - job_name: 'node_exporter'
        static_configs:
          - targets: ['node01:9100','node02:9100','node03:9100','node04:9100']

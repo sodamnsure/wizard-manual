@@ -1,11 +1,10 @@
 module.exports = [
     {
-        title: "Cloudera",
-        directoryPath: "cloudera/",
+        title: "MySQL",
+        directoryPath: "mysql/",
         initialOpenGroupIndex: -1,
         children: [
-            "system-requirements",
-            "installing-cloudera-manager-and-cdh",
+            "install",
         ],
     },
     {
@@ -17,11 +16,12 @@ module.exports = [
         ],
     },
     {
-        title: "MySQL",
-        directoryPath: "mysql/",
+        title: "Cloudera",
+        directoryPath: "cloudera/",
         initialOpenGroupIndex: -1,
         children: [
-            "install",
+            "system-requirements",
+            "installing-cloudera-manager-and-cdh",
         ],
     },
     {
