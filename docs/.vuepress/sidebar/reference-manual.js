@@ -17,6 +17,14 @@ module.exports = [
         ],
     },
     {
+        title: "MySQL",
+        directoryPath: "mysql/",
+        initialOpenGroupIndex: -1,
+        children: [
+            "install",
+        ],
+    },
+    {
         title: "Prometheus",
         directoryPath: "prometheus/",
         initialOpenGroupIndex: -1,
