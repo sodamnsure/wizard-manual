@@ -132,6 +132,48 @@
 
 ## 4. 修改简单密码
 
+1. 查看`validate_password`变量
+
+   ```sql
+   SHOW VARIABLES LIKE 'validate_password%';
+   ```
+
+   ```sql
+   +--------------------------------------+--------+
+   | Variable_name                        | Value  |
+   +--------------------------------------+--------+
+   | validate_password_check_user_name    | OFF    |
+   | validate_password_dictionary_file    |        |
+   | validate_password_length             | 8      |
+   | validate_password_mixed_case_count   | 1      |
+   | validate_password_number_count       | 1      |
+   | validate_password_policy             | MEDIUM |
+   | validate_password_special_char_count | 1      |
+   +--------------------------------------+--------+
+   ```
+
+2. 修改`validate_password_length`和`validate_password_policy`值
+
+   ```sql
+   -- 密码最小长度
+   set global validate_password_length=4;
+   -- 密码强度检查等级
+   set global validate_password_policy=0;
+   -- 刷新
+   FLUSH PRIVILEGES;
+   ```
+
+3. 修改密码
+
+   ```sql
+   ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+   flush privileges;
+   ```
+
+   
+
+
+
 
 
 官网参考链接: [Installing MySQL on Linux](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
