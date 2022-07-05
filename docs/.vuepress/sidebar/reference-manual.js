@@ -1,5 +1,13 @@
 module.exports = [
     {
+        title: "Doris",
+        directoryPath: "doris/",
+        initialOpenGroupIndex: -1,
+        children: [
+            "install",
+        ],
+    },
+    {
         title: "MySQL",
         directoryPath: "mysql/",
         initialOpenGroupIndex: -1,
