@@ -123,3 +123,83 @@
 2. BE部署
 
    1. 修改`conf/be.conf`文件，配置`storage_root_path`
+
+      ```sh{5}
+      # data root path, separate by ';'
+      # you can specify the storage medium of each root path, HDD or SSD
+      # you can add capacity limit at the end of each root path, seperate by ','
+      # eg:
+      storage_root_path = /doris,medium:hdd,capacity:3500;/opt/software/palo-1.0.5/be/storage,medium:ssd,capacity:1800
+      # /home/disk1/doris.HDD, capacity limit is 50GB, HDD;
+      # /home/disk2/doris.SSD, capacity limit is 1GB, SSD;
+      # /home/disk2/doris, capacity limit is disk capacity, HDD(default)
+      ```
+
+   2. 在FE中添加所有BE节点
+
+      ```sh
+      mysql -u root  -h  192.168.1.10 -P  9030
+      ```
+
+      ```sh
+      ALTER SYSTEM ADD BACKEND "192.168.1.13:9050";
+      ALTER SYSTEM ADD BACKEND "192.168.1.14:9050";
+      ALTER SYSTEM ADD BACKEND "192.168.1.15:9050";
+      ALTER SYSTEM ADD BACKEND "192.168.1.16:9050";
+      ALTER SYSTEM ADD BACKEND "192.168.1.17:9050";
+      ```
+
+   3. 启动BE
+
+      ```sh
+      bin/start_be.sh --daemon
+      ```
+
+   4. 查看BE状态
+
+      ```sql
+      mysql -u root -h 192.168.7.* -P 9030
+      SHOW PROC '/backends';
+      ```
+
+      ```sql
+      +-----------+-----------------+---------------+----------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+--------------------
+      | BackendId | Cluster         | IP            | HostName | HeartbeatPort | BePort | HttpPort | BrpcPort | LastStartTime       | LastHeartbeat       | Alive | SystemDecommissioned | ClusterDecommission
+      +-----------+-----------------+---------------+----------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+--------------------
+      | 36728047  | default_cluster | 192.168.1.13 | doris-be-01  | 9050          | 9060   | 8040     | 8060     | 2021-07-15 10:21:42 | 2021-09-16 15:54:29 | true  | false                | false              
+      | 36728048  | default_cluster | 192.168.1.14 | doris-be-02  | 9050          | 9060   | 8040     | 8060     | 2021-07-15 10:22:44 | 2021-09-16 15:54:29 | true  | false                | false              
+      | 36728049  | default_cluster | 192.168.1.15 | doris-be-03  | 9050          | 9060   | 8040     | 8060     | 2021-07-15 10:23:32 | 2021-09-16 15:54:29 | true  | false                | false              
+      | 36728050  | default_cluster | 192.168.1.16 | doris-be-04  | 9050          | 9060   | 8040     | 8060     | 2021-07-15 10:24:12 | 2021-09-16 15:54:29 | true  | false                | false              
+      | 36728051  | default_cluster | 192.168.1.17 | doris-be-05  | 9050          | 9060   | 8040     | 8060     | 2021-07-15 10:25:22 | 2021-09-16 15:54:29 | true  | false                | false                         
+      +-----------+-----------------+---------------+----------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+--------------------
+      5 rows in set (0.00 sec)
+      ```
+
+3. FE高可用部署
+
+   1. 通过`ALTER SYSTEM ADD FOLLOWER`命令添加节点
+
+      ```sh
+      ALTER SYSTEM ADD FOLLOWER "192.168.1.11:9010";
+      ALTER SYSTEM ADD FOLLOWER "192.168.1.12:9010";
+      ```
+
+   2. 在所添加节点运行一下命令
+
+      ```sh
+      ./bin/start_fe.sh --helper 192.168.1.10:9010 --daemon
+      ```
+
+
+
+## 3. Root用户登录与密码修改
+
+Doris内置root和admin用户，密码默认都为空。登录后，可以通过以下命令修改root密码：
+
+```sql
+SET PASSWORD FOR 'root' = PASSWORD('root');
+```
+
+
+
+参考链接：[Apache Doris 环境安装部署](https://hf200012.github.io/2021/09/Apache-Doris-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/)
