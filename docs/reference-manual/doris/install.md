@@ -4,19 +4,45 @@
 
 1. Linux操作系统版本需求
 
-   | Linux系统 | 版本         | 验证命令                  |
-   | --------- | ------------ | ------------------------- |
-   | CentOS    | 7.1及以上    | `cat /etc/redhat-release` |
-   | Ubuntu    | 16.04 及以上 | `cat /etc/redhat-release` |
+   Doris对CentOS系统版本要求在`7.1及以上`，通过以下命令来查看版本
+
+   ```sh
+   cat /etc/redhat-release
+   ```
+
+   ```sh
+   CentOS Linux release 7.9.2009 (Core)
+   ```
 
    
 
 2. 软件需求
 
-   | 软件 | 版本         | 验证命令        |
-   | ---- | ------------ | --------------- |
-   | java | 1.8 及以上   | `java -version` |
-   | gcc  | 4.8.2 及以上 | `gcc -v`        |
+   1. java版本需要在`1.8及以上`，通过以下命令来查看版本
+
+      ```sh
+      java -version
+      ```
+
+      ```sh
+      java version "1.8.0_181"
+      Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+      Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+      ```
+
+
+   2. gcc版本需要在`4.8.2及以上`，通过以下命令来查看版本
+
+      ```sh
+      gcc -v
+      ```
+
+      ```sh
+      ...
+      gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC)
+      ```
+
+      
 
 3. 文件句柄数
 
@@ -194,11 +220,13 @@
 
 ## 3. Root用户登录与密码修改
 
-Doris内置root和admin用户，密码默认都为空。登录后，可以通过以下命令修改root密码：
+1. Doris内置root和admin用户，密码默认都为空。登录后，可以通过以下命令修改root密码：
 
-```sql
-SET PASSWORD FOR 'root' = PASSWORD('root');
-```
+   ```sql
+   SET PASSWORD FOR 'root' = PASSWORD('root');
+   ```
+
+   
 
 
 
