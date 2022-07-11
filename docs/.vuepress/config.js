@@ -19,7 +19,7 @@ module.exports = {
     nav: [
       {
         text: "Reference Manual",
-        link: "/reference-manual/cloudera/system-requirements",
+        link: "/reference-manual/doris/install",
       },
       {
         text: "Data Integration",
