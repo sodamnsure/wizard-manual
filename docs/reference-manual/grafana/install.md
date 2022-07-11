@@ -34,5 +34,4 @@
 
 
 3. 访问grafana
-
    [http://192.168.3.**:3000](https://link.zhihu.com/?target=https%3A//www.oschina.net/action/GoToLink%3Furl%3Dhttp%3A%2F%2F192.168.56.200%3A3000)
