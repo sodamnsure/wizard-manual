@@ -51,6 +51,6 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true,
-    extractHeaders: ['h1','h2'],
+    extractHeaders: ['h1'],
   },
 }
