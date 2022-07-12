@@ -1,6 +1,6 @@
 # Installing Cloudera Manager and CDH
 
-## 1.配置本地Repository
+## 一、配置本地Repository
 
 1. 配置Local Parcel Repository
 

@@ -1,6 +1,6 @@
 # Installing MySQL on Linux
 
-## 1. 添加MySQL Yum Repository
+## 一、添加MySQL Yum Repository
 
 1. 访问[MySQL Yum Repository](https://dev.mysql.com/downloads/repo/yum/)页面，下载适配`Red Hat Enterprise Linux 7 / Oracle Linux 7`系统的`rpm`文件`mysql80-community-release-el7-6.noarch.rpm`。
 
@@ -28,7 +28,7 @@
 
 
 
-## 2. 选择MySQL5.7版本
+## 二、选择MySQL5.7版本
 
 1. 查看所有`MySQL Yum repository`中所有的`subrepositories`
 
@@ -99,7 +99,7 @@
 
    
 
-## 3. 访问MySQL
+## 三、访问MySQL
 
 1. 获取初始密码
 
@@ -130,7 +130,7 @@
 
    
 
-## 4. 修改简单密码
+## 四、修改简单密码
 
 1. 查看`validate_password`变量
 

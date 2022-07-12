@@ -1,6 +1,6 @@
 # System Requirements
 
-## 1.软件依赖
+## 1. 软件依赖
 
 1. Cloudera Manager、Cloudera Manager Agent组件依赖
 
@@ -19,7 +19,7 @@
    | Spark3.0 | Python 2.7 and 3.4 and higher | `python -V` |
    | Spark3.1 | Python 3.6 and higher         | `python -V` |
 
-## 2.操作系统
+## 2. 操作系统
 
 1. CDH6.3.x 对Centos操作系统版本要求：7.9, 7.8, 7.7, 7.6, 7.5, 7.4, 7.3, 7.2, 6.10, 6.9
 
@@ -33,7 +33,7 @@
    cat /etc/redhat-release
    ```
 
-## 3.文件系统
+## 3. 文件系统
 
 1. Supported Filesystems: 
 
@@ -82,7 +82,7 @@
 
 
 
-## 4.设置主机名
+## 4. 设置主机名
 
 1. 设置主机名
 
@@ -119,7 +119,7 @@
 
    
 
-## 5.禁用防火墙
+## 5. 禁用防火墙
 
 1. 保存防火墙规则
 
@@ -134,7 +134,7 @@
    sudo systemctl stop firewalld
    ```
 
-## 6.设置SELinux
+## 6. 设置SELinux
 
 1. 检查SELinux状态
 
@@ -154,7 +154,7 @@
 
    
 
-## 7.启用NTP服务
+## 7. 启用NTP服务
 
 1. ‎CentOS 7默认使用`chronyd`而不是`ntpd`服务用来作为时间同步的工具，所以第一步在**每台机器**上先停止`chronyd`服务。
 
@@ -208,7 +208,7 @@
 
 
 
-## 8.禁用tuned服务
+## 8. 禁用tuned服务
 
 1. 确保`tuned`服务开启
 
@@ -241,7 +241,7 @@
 
 
 
-## 9.关闭透明大页面
+## 9. 关闭透明大页面
 
 1. 编辑`/etc/rc.d/rc.local`文件，新增以下内容
 
@@ -270,7 +270,7 @@
 
 
 
-## 10.设置交换空间
+## 10. 设置交换空间
 
 1. 查看当前`vm.swappiness`
 

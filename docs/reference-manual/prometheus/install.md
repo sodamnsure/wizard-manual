@@ -2,7 +2,9 @@
 
 ## 一. 所需组件以及版本
 
-1. [官网](https://prometheus.io/)
+1. 参考链接
+
+   [Prometheus官网](https://prometheus.io/)
 
    [下载地址](https://prometheus.io/download/)
 
@@ -17,8 +19,6 @@
    [pushgateway-1.4.2.linux-amd64.tar.gz](https://github.com/prometheus/pushgateway/releases/download/v1.4.2/pushgateway-1.4.2.linux-amd64.tar.gz)
 
    注：报警选择alertmanager，对比grafana的报警机制更加灵活
-
-
 
 ## 二. 安装Prometheus服务端
 

@@ -1,8 +1,10 @@
 # Install and Config
 
-## 一. 所需组件以及版本
+## 一、所需组件以及版本
 
-1. [官网](https://grafana.com/)
+1. 参考链接
+
+   [官网](https://grafana.com/)
 
    [下载地址](https://grafana.com/grafana/download/7.5.9)
 
@@ -10,7 +12,7 @@
 
    [grafana-enterprise-7.5.9.linux-amd64.tar.gz](https://dl.grafana.com/enterprise/release/grafana-enterprise-7.5.9.linux-amd64.tar.gz)
 
-## 二. 安装Grafana与配置
+## 二、安装Grafana与配置
 
 1. 下载并安装
 

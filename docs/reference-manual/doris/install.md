@@ -1,10 +1,8 @@
 # Installation and Deployment
 
-## 1. 软硬件需求
+## 一、软硬件需求
 
-1. Linux操作系统版本需求
-
-   Doris对CentOS系统版本要求在`7.1及以上`，通过以下命令来查看版本
+1. Linux操作系统版本需求，Doris对CentOS系统版本要求在`7.1及以上`，通过以下命令来查看版本
 
    ```sh
    cat /etc/redhat-release
@@ -13,8 +11,6 @@
    ```sh
    CentOS Linux release 7.9.2009 (Core)
    ```
-
-   
 
 2. 软件需求
 
@@ -82,7 +78,7 @@
 
    
 
-## 2. 集群部署
+## 二、集群部署
 
 1. FE部署
 
@@ -218,7 +214,7 @@
 
 
 
-## 3. Root用户登录与密码修改
+## 三、Root用户登录与密码修改
 
 1. Doris内置root和admin用户，密码默认都为空。登录后，可以通过以下命令修改root密码：
 
