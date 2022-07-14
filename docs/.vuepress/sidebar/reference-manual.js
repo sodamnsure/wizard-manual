@@ -8,11 +8,19 @@ module.exports = [
         ],
     },
     {
-        title: "MySQL",
+        title: "Mysql",
         directoryPath: "mysql/",
         initialOpenGroupIndex: -1,
         children: [
             "install",
+        ],
+    },
+    {
+        title: "Oracle",
+        directoryPath: "oracle/",
+        initialOpenGroupIndex: -1,
+        children: [
+            "common-statements",
         ],
     },
     {
