@@ -160,7 +160,7 @@
    -- 密码强度检查等级
    set global validate_password_policy=0;
    -- 刷新
-   FLUSH PRIVILEGES;
+   flush privileges;
    ```
 
 3. 修改密码
@@ -170,10 +170,67 @@
    flush privileges;
    ```
 
+
+## 五、开启用户远程连接
+
+1. 这里以root用户为例，登录MySQL的`mysql`数据库，查询`user`表，查看当前用户是否支持远程连接
+
+   ```sql
+   use mysql;
+   select user, authentication_string, host from user;
+   ```
+
+   ```sql
+   mysql> show databases;
+   +--------------------+
+   | Database           |
+   +--------------------+
+   | information_schema |
+   | mysql              |
+   | performance_schema |
+   | sys                |
+   +--------------------+
+   4 rows in set (0.00 sec)
    
+   mysql> use mysql;
+   Database changed
+   mysql> select user, authentication_string, host from user;
+   +---------------+-------------------------------------------+-----------+
+   | user          | authentication_string                     | host      |
+   +---------------+-------------------------------------------+-----------+
+   | root          | *032197AE5731D4664921A6CCAC7CFCE6A0698693 | localhost |
+   | mysql.session | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | localhost |
+   | mysql.sys     | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | localhost |
+   +---------------+-------------------------------------------+-----------+
+   3 rows in set (0.00 sec)
+   ```
 
+2. 运行下面命令，开启远程连接，其中123456为连接密码，%为任意主机，就是任意主机可以通过用户名`root`+密码`123456` 进行连接。
 
+   ```sql
+   GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456';
+   ```
 
+   重新加载用户权限使得理解生效
 
+   ```sql
+   flush privileges;
+   ```
+
+   重新查看`user`表，可以查看`host`发生了变更，此时就可以远程访问了。
+
+   ```sql
+   mysql> select user, authentication_string, host from user;
+   +---------------+-------------------------------------------+-----------+
+   | user          | authentication_string                     | host      |
+   +---------------+-------------------------------------------+-----------+
+   | root          | *032197AE5731D4664921A6CCAC7CFCE6A0698693 | %         |
+   | mysql.session | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | localhost |
+   | mysql.sys     | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | localhost |
+   +---------------+-------------------------------------------+-----------+
+   3 rows in set (0.00 sec)
+   ```
+
+   注：**如果还是无法连接，检查是否防火墙屏蔽了mysql端口的远程访问权限**。
 
 官网参考链接: [Installing MySQL on Linux](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
