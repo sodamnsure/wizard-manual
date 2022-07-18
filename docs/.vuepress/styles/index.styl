@@ -65,16 +65,6 @@ main.page > .theme-default-content span.badge{
     color: #1890ff;
 }
 
-a.sidebar-link.active {
-    font-weight: 600;
-    color: #1890ff !important;
-    border-left-color: #1890ff !important;
-}
-
-a.sidebar-link:hover {
-    color: #1890ff !important;
-}
-
 // 关闭搜索栏
 .navbar .links .search-box {
     display: none;
@@ -90,6 +80,39 @@ a.sidebar-link:hover {
     border-right: 1px solid #eaecef;
     width: 21rem;
 }
+
+.sidebar-heading {
+    border-radius: 0.25rem;
+    color: #858f9a !important;
+    font-weight: 400 !important;
+    border-radius: 0.5rem;
+}
+
+.sidebar-heading:hover {
+    color: #2c3e50 !important;
+    background: rgba(0,0,0,0.05);
+}
+
+.sidebar-group a.sidebar-link {
+    border-radius: 0.25rem;
+    color: #858f9a;
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+
+.sidebar-group a.sidebar-link.active {
+    font-weight: 400;
+    color: #1890ff !important;
+    border-left-color: #1890ff !important;
+}
+
+.sidebar-group a.sidebar-link:hover {
+    background: rgba(0,0,0,0.05) !important;
+    color: #2c3e50 !important;
+}
+
+
+
 
 
 table {
