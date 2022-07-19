@@ -79,6 +79,8 @@ main.page > .theme-default-content span.badge{
 .sidebar {
     border-right: 1px solid #eaecef;
     width: 21rem;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .sidebar-heading {
@@ -87,14 +89,19 @@ main.page > .theme-default-content span.badge{
     border-radius: 0.5rem;
 }
 
+.sidebar-heading.open, .sidebar-heading:hover {
+    color: #1890ff !important;
+}
+
 .sidebar-heading:hover {
-    color: #2c3e50 !important;
     background: rgba(0,0,0,0.05);
 }
 
 .sidebar-group a.sidebar-link {
     color: #858f9a;
     font-weight: 400;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
     border-radius: 0.5rem;
 }
 
@@ -102,6 +109,7 @@ main.page > .theme-default-content span.badge{
     font-weight: 400;
     color: #1890ff !important;
     border-left-color: #1890ff !important;
+    background: rgba(0,0,0,0.05) !important;
 }
 
 .sidebar-group a.sidebar-link:hover {
@@ -110,7 +118,9 @@ main.page > .theme-default-content span.badge{
 }
 
 
-
+.sidebar-group-items{
+    margin-left: 2rem !important;
+}
 
 
 table {
