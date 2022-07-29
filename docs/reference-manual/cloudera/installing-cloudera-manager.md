@@ -1,4 +1,4 @@
-# Installing Cloudera Manager and CDH
+# Installing Cloudera Manager
 
 ## 一、配置本地Repository
 

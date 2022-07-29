@@ -37,7 +37,7 @@ module.exports = [
         initialOpenGroupIndex: -1,
         children: [
             "system-requirements",
-            "installing-cloudera-manager-and-cdh",
+            "installing-cloudera-manager",
         ],
     },
     {
