@@ -448,6 +448,14 @@
    源端与目标端的映射关系
    ```
 
+   添加`trail`文件到`replicate`进程
+
+   ```sh
+   GGSCI (uranus) 5> add replicat rekafka exttrail /opt/software/ogg_kafka/dirdat/ws,checkpointtable test_ogg.checkpoint 
+   ```
+
+   
+
 5. 配置`kafka.props`：
 
    ```sh
