@@ -1,4 +1,4 @@
-# Install and Config
+# Installation and Deployment
 
 ## 一、所需组件以及版本
 

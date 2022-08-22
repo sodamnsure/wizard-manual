@@ -1,4 +1,4 @@
-# Installing MySQL on Linux
+# Installation and Deployment
 
 ## 一、添加MySQL Yum Repository
 
