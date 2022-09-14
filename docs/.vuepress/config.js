@@ -33,6 +33,10 @@ module.exports = {
         text: "Data Warehouse",
         link: "/data-warehouse/dimensional-modeling/overview-of-dimension-modeling",
       },
+      {
+        text: "Data Governance",
+        link: "/data-governance/data-lineage/overview-of-data-lineage",
+      },
     ],
     sidebar: {
       "/reference-manual/": convertSidebar(
@@ -46,6 +50,10 @@ module.exports = {
       "/data-warehouse/": convertSidebar(
         require("./sidebar/data-warehouse.js"),
         "/data-warehouse/"
+      ),
+      "/data-governance/": convertSidebar(
+        require("./sidebar/data-governance.js"),
+        "/data-governance/"
       ),
     },
   },
