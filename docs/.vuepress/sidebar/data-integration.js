@@ -9,7 +9,7 @@ module.exports = [
         ],
     },
     {
-        title: "Alibaba Datax",
+        title: "Alibaba DataX",
         directoryPath: "datax/",
         initialOpenGroupIndex: -1,
         children: [
