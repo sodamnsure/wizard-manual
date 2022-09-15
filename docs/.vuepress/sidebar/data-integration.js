@@ -7,5 +7,13 @@ module.exports = [
             'ogg-for-big-data',
             'capture-change-data-into-kafka',
         ],
+    },
+    {
+        title: "Alibaba Datax",
+        directoryPath: "datax/",
+        initialOpenGroupIndex: -1,
+        children: [
+            'doriswriter',
+        ],
     }
 ];
