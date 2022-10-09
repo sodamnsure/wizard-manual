@@ -8,7 +8,7 @@ module.exports = [
         ],
     },
     {
-        title: "Mysql",
+        title: "MySQL",
         directoryPath: "mysql/",
         initialOpenGroupIndex: -1,
         children: [
@@ -38,6 +38,14 @@ module.exports = [
         children: [
             "system-requirements",
             "installing-cloudera-manager",
+        ],
+    },
+    {
+        title: "ProxySQL",
+        directoryPath: "proxysql/",
+        initialOpenGroupIndex: -1,
+        children: [
+            "download-and-install-proxysql",
         ],
     },
     {
