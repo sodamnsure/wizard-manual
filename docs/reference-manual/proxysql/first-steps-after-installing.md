@@ -108,6 +108,10 @@
 
 1. 通过`admin interface`访问，`--prompt`为自定义提示符，缺省则为`mysql>`
 
+   ```sql
+   mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> '
+   ```
+   
    ```sh
    mysql: [Warning] Using a password on the command line interface can be insecure.
    Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -134,7 +138,7 @@
    +-----+---------------+-------------------------------------+
    5 rows in set (0.00 sec)
    ```
-
+   
    注：官网还有通过配置文件配置ProxySQL的介绍，不使用这种方式。
 
 
