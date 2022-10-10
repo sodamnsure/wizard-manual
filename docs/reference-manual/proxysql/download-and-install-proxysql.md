@@ -32,74 +32,9 @@
    ```
 
 
-2. 查看`proxysql`版本
 
-   ```sh
-   proxysql --version
-   ```
+## 三、参考链接
 
-   ```sh
-   ProxySQL version 2.4.4-44-g3b13c7c, codename Truls
-   ```
+1. 官网链接：
 
-
-
-## 三、配置ProxySQL
-
-1. 启动proxysql
-
-   ```sh
-   systemctl start proxysql
-   ```
-
-2. 配置开机自启动
-
-   ```sh
-   systemctl enable proxysql
-   ```
-
-3. 查看proxysql状态
-
-   ```sh
-   systemctl status proxysql
-   ```
-
-   
-
-## 四、访问ProxySQL
-
-1. 通过`admin interface`访问，`--prompt`为自定义提示符，缺省则为`mysql>`
-
-   ```sql
-   mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> '
-   ```
-
-   ```sh
-   mysql: [Warning] Using a password on the command line interface can be insecure.
-   Welcome to the MySQL monitor.  Commands end with ; or \g.
-   Your MySQL connection id is 1
-   Server version: 5.5.30 (ProxySQL Admin Module)
-   
-   Copyright (c) 2000, 2022, Oracle and/or its affiliates.
-   
-   Oracle is a registered trademark of Oracle Corporation and/or its
-   affiliates. Other names may be trademarks of their respective
-   owners.
-   
-   Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-   
-   Admin> show databases;
-   +-----+---------------+-------------------------------------+
-   | seq | name          | file                                |
-   +-----+---------------+-------------------------------------+
-   | 0   | main          |                                     |
-   | 2   | disk          | /var/lib/proxysql/proxysql.db       |
-   | 3   | stats         |                                     |
-   | 4   | monitor       |                                     |
-   | 5   | stats_history | /var/lib/proxysql/proxysql_stats.db |
-   +-----+---------------+-------------------------------------+
-   5 rows in set (0.00 sec)
-   ```
-
-
-
+   [Download and Install ProxySQL](https://proxysql.com/documentation/installing-proxysql/)

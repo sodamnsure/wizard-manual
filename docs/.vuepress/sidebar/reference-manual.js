@@ -46,6 +46,7 @@ module.exports = [
         initialOpenGroupIndex: -1,
         children: [
             "download-and-install-proxysql",
+            "first-steps-after-installing",
         ],
     },
     {
