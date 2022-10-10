@@ -1,4 +1,4 @@
-# First steps after installing
+# First steps after Installing
 
 ## 一、服务管理
 

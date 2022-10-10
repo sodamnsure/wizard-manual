@@ -47,6 +47,7 @@ module.exports = [
         children: [
             "download-and-install-proxysql",
             "first-steps-after-installing",
+            "how-to-configure-proxysql",
         ],
     },
     {
