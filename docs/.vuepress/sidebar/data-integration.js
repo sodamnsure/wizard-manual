@@ -8,12 +8,4 @@ module.exports = [
             'capture-change-data-into-kafka',
         ],
     },
-    {
-        title: "Alibaba DataX",
-        directoryPath: "datax/",
-        initialOpenGroupIndex: -1,
-        children: [
-            'doriswriter',
-        ],
-    }
 ];
